@@ -36,5 +36,10 @@ namespace orai_adatbazis
                     Type = x[5]
                 }).ToList();
         }
+        public List<string> BeginChar(char betu)
+        {
+            return muzeums.Where(x => x.Name[0]==betu).Select(x => x.Name).ToList();
+        }
+
     }
 }
